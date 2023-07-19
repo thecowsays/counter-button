@@ -1,0 +1,104 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  --shadow: dimgray;
+}
+
+.main-wrapper {
+  margin: 0 2em;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.p-counter {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: lightsteelblue;
+  border: 0;
+  border-right: solid 0.2em var(--shadow);
+  border-bottom: solid 0.2em var(--shadow);
+  border-radius: 0.5em;
+  padding: 0.6em 2.1em;
+  margin: 1em;
+  width: 50%;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.positive-box,
+.negative-box,
+.total-box {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 25%;
+  height: 25%;
+  padding: 0em 1em;
+  margin: 0 1em;
+  border: solid 0.15em var(--shadow);
+  border-radius: 0.75em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.positive-box {
+  background-color: cyan;
+}
+
+.negative-box {
+  background-color: lightpink;
+}
+
+.total-box {
+  background-color: violet;
+}
+
+.total-box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+footer {
+  margin-top: 10em;
+  font-size: 0.75rem;
+  text-align: right;
+  opacity: 25%;
+}
+
+footer span {
+  color: red;
+}
+
+footer:hover {
+  opacity: 75%;
+  font-size: 0.8rem;
+  cursor: none;
+}
